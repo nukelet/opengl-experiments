@@ -33,4 +33,8 @@ set(ALL_LIBS
     glad
 )
 
+# define the SHADER_DIR macro that points to the full path to
+# the src/shaders folder
+add_compile_definitions(SHADER_DIR="${PROJECT_SOURCE_DIR}/src/shaders")
+
 add_subdirectory(src)
